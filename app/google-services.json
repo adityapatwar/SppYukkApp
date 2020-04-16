@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "688298159102",
+    "firebase_url": "https://pembayaranspp-9c334.firebaseio.com",
+    "project_id": "pembayaranspp-9c334",
+    "storage_bucket": "pembayaranspp-9c334.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688298159102:android:0d688d607feaf052956eaf",
+        "android_client_info": {
+          "package_name": "com.nmproduction.sppyuk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688298159102-q8dpchch92fdp2mku329o5a2rrbkkkpt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nmproduction.sppyuk",
+            "certificate_hash": "fa7014abaec57fb3e24b74009964714b80a8c6c4"
+          }
+        },
+        {
+          "client_id": "688298159102-3ccm2b1d7j7chiv7dt276c3t7i0egrts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbrt2U-wIWs-Om58xf1y3t_fnDaZFyyFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "688298159102-3ccm2b1d7j7chiv7dt276c3t7i0egrts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

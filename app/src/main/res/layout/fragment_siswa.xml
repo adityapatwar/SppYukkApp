@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/padding12dp"
+        android:paddingEnd="@dimen/padding12dp"
+        android:paddingBottom="@dimen/padding24dp"
+        tools:context=".ui.create.siswa.SiswaFragment">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image"
+            android:src="@drawable/ic_image_class"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/usernameLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin36dp"
+            app:layout_constraintTop_toBottomOf="@id/image">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:hint="@string/username"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="@dimen/padding12dp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin20dp"
+            app:layout_constraintTop_toBottomOf="@id/usernameLay"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:hint="@string/password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="@dimen/padding12dp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nisnLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin20dp"
+            app:layout_constraintTop_toBottomOf="@id/passwordLay">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nisn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:hint="@string/nisn"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="@dimen/padding12dp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nisLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin20dp"
+            app:layout_constraintTop_toBottomOf="@id/nisnLay">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:hint="@string/nis"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="@dimen/padding12dp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin20dp"
+            app:layout_constraintTop_toBottomOf="@id/nisLay">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:hint="@string/namaSiswa"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/padding12dp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/kelasLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin20dp"
+            android:hint="@string/kelas"
+            app:layout_constraintTop_toBottomOf="@id/nameLay">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding12dp"
+                android:text="@string/kelas" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/spKelas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding12dp"
+                android:textColor="#2E2E2E" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/alamatLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin20dp"
+            app:layout_constraintTop_toBottomOf="@id/kelasLay">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:hint="@string/alamat"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/padding12dp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/noTelLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin20dp"
+            app:layout_constraintTop_toBottomOf="@id/alamatLay">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/noTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:hint="@string/noTelp"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="@dimen/padding12dp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/spplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin20dp"
+            app:layout_constraintTop_toBottomOf="@id/noTelLay">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding12dp"
+                android:text="@string/spp" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/spSpp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding12dp"
+                android:textColor="#2E2E2E" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/create"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin16dp"
+            android:layout_marginBottom="@dimen/margin16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="0dp"
+            app:contentPadding="6dp"
+            app:layout_constraintEnd_toEndOf="@id/spplay"
+            app:layout_constraintHorizontal_bias="0.98"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spplay"
+            app:layout_constraintWidth_percent="0.25">
+
+            <TextView
+                android:id="@+id/textOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/buat"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text16sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

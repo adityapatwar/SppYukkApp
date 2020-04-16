@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">SppYuk</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image">image</string>
+    <string name="creator_and_class">Aditya Fatwa Ramadhan || XII RPL 1</string>
+    <string name="username">Email</string>
+    <string name="password">Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="log_in">Log in</string>
+    <string name="siswa">Siswa</string>
+    <string name="petugas">Petugas</string>
+    <string name="admin">Admin</string>
+    <string name="data">Data</string>
+    <string name="Transaksi">Transaksi</string>
+    <string name="historyPembayaran">History Pembayaran</string>
+    <string name="generateLaporan">Generate Laporan</string>
+    <string name="log_out">Log out</string>
+    <string name="spp">SPP</string>
+    <string name="membuat_kartu_spp">Membuat Kartu SPP</string>
+    <string name="membuat_kelas">Membuat Kelas</string>
+    <string name="kelas">Kelas</string>
+    <string name="membuat_data_petugas">Membuat data petugas</string>
+    <string name="membuat_data_siswa">Membuat data siswa</string>
+    <string name="tahun">Tahun</string>
+    <string name="masaBerlaku">Lama Pembayaran (Tahun)</string>
+    <string name="nominal">Nominal</string>
+    <string name="buat">Buat</string>
+    <string name="namaKelas">Nama Kelas</string>
+    <string name="kompetesiKeahlian">Kompetesi Keahlian</string>
+    <string name="namaPetugas">Nama Petugas</string>
+    <string name="namaSiswa">Nama Siswa</string>
+    <string name="nisn">NISN</string>
+    <string name="nis">NIS</string>
+    <string name="alamat">alamat</string>
+    <string name="noTelp">No Telp</string>
+    <string name="Name">Nama</string>
+    <string name="jumlah_bayar">Jumlah Bayar</string>
+    <string name="tunggak">Tunggakan</string>
+    <string name="date">Tanggal</string>
+    <string name="buat_Laporan">Buat Laporan</string>
+    <string name="idSpp">Masa Berlaku SPP</string>
+    <string name="Pembayaran">Pembayaran</string>
+    <string name="detail_pembayaran">Detaul Pembayaran</string>
+    <string name="tingkat">Tingkat Kelas</string>
+    <string name="bayar">Bayar</string>
+    <string name="nama_siswa">Nama Siswa</string>
+</resources>
